@@ -362,6 +362,8 @@ services:
     ports:
       - "${EXPOSE_NGINX_PORT:-8080}:${NGINX_PORT:-8080}"
       - "${EXPOSE_NGINX_SSL_PORT:-443}:${NGINX_SSL_PORT:-443}"
+    networks:
+      - docker_default
 
   # The Weaviate vector store.
   weaviate:
