@@ -14,9 +14,9 @@ services:
       - "80:80"
       #- "443:443"
     networks:
-      - docker_default
+      - superbot_default
 
 networks:
-  docker_default:
-    name: docker_default
+  superbot_default:
+    name: superbot_default
     external: true

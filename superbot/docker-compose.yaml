@@ -360,8 +360,9 @@ services:
       - api
       - web
     ports:
-      - "${EXPOSE_NGINX_PORT:-8080}:${NGINX_PORT:-8080}"
-      - "${EXPOSE_NGINX_SSL_PORT:-443}:${NGINX_SSL_PORT:-443}"
+      - 8080:80
+      # - "${EXPOSE_NGINX_PORT:-8080}:${NGINX_PORT:-8080}"
+      # - "${EXPOSE_NGINX_SSL_PORT:-443}:${NGINX_SSL_PORT:-443}"
     networks:
       - docker_default
       - superbot_default
