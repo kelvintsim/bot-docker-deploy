@@ -614,6 +614,9 @@ networks:
   docker_default:
     name: docker_default
     external: true
+  superbot_default:
+    name: superbot_default
+    external: true
 
 volumes:
   oradata:
