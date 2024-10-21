@@ -364,7 +364,6 @@ services:
       # - "${EXPOSE_NGINX_PORT:-8080}:${NGINX_PORT:-8080}"
       # - "${EXPOSE_NGINX_SSL_PORT:-443}:${NGINX_SSL_PORT:-443}"
     networks:
-      - docker_default
       - superbot_default
 
   # The Weaviate vector store.
@@ -612,9 +611,6 @@ networks:
   opensearch-net:
     driver: bridge
     internal: true
-  docker_default:
-    name: docker_default
-    external: true
   superbot_default:
     name: superbot_default
     external: true

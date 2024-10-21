@@ -22,3 +22,5 @@ docker-compose-internal.yaml
 
 docker/nginx/conf.d/default.conf
 docker/middleware.env
+
+.env
